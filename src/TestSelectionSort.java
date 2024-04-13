@@ -14,7 +14,7 @@ public class TestSelectionSort {
     }
 
     public void testPositive() {
-        int[] arr = {8, 9, 7, 10, 2};
+        int[] arr = {11, 19, 17, 20, 12};
         int[] sortedArr = {2, 7, 8, 9, 10};
         selectionSort.basicSelectionSort(arr);
         Assert.assertArrayEquals("Positive numbers not sorted correctly", sortedArr, arr);
@@ -22,7 +22,7 @@ public class TestSelectionSort {
 
 
     public void testNegative() {
-        int[] arr = {-8, -9, -7, -10, -2};
+        int[] arr = {-18, -19, -17, -20, -12};
         int[] sortedArr = {-10, -9, -8, -7, -2};
         selectionSort.basicSelectionSort(arr);
         Assert.assertArrayEquals("Negative numbers not sorted correctly", sortedArr, arr);
